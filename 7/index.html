@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function validateForm() {
+            let name = document.forms["myForm"]["name"].value;
+            let email = document.forms["myForm"]["email"].value;
+            let mobile = document.forms["myForm"]["mobile"].value;
+            if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email) === false) {
+                alert("Please enter valid email address.");
+                return false;
+            }
+            else if (mobile.length < 11) {
+                alert("Mobile number should be 11 digits.");
+                return false;
+            }
+            else{
+                alert("Thank you.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div >
+        <div style="display: flex;justify-content:center;">
+            <div style="padding:30px; border:5px solid green;">   
+                <h2 style="text-align: center;color: red">Person Information</h2>   
+                <form name="myForm" onsubmit="return validateForm()" >
+                    Name: <input type="text" name="name"><br><br>
+                    Address: <input type="text" name="address"><br><br>
+                    <div style="display: inline;">
+                        <span>Gender:</span>
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="Other">
+                    <label for="other">Other</label><br><br>
+                    </div>
+                    Email: <input type="text" name="email"><br><br>
+                    Mobile Number: <input type="number" name="mobile"><br>
+                    <br>
+                    <div style="text-align:center;">
+                        <input style="background: white;" type="submit" value="Enter">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

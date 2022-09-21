@@ -1,0 +1,22 @@
+body {
+    font-family: "Sofia", sans-serif;
+}
+.website {
+    border: 1px solid gray;
+    color: white;
+    background: green;
+}
+.website:hover {
+    color: black;
+    background: white;
+}
+form {
+    width:90%;
+     max-width:500px;
+     margin:15px auto;
+   }
+   input, textarea {
+     width:100%;
+     border-radius:3px;
+     border:solid 1px #ccc;
+   }
