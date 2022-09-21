@@ -4,66 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IST</title>
+    <title>HTML</title>
+    <style>
+        table {
+          border-collapse: collapse;
+        }
+        table, th, td {
+          padding: 10px;
+          border: 1px solid;
+        }
+    </style>
 </head>
-<style>
-#info {
-  font-family: Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-#info td, #info th {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-
-#info tr:nth-child(even){background-color: #f2f2f2;}
-
-#info tr:hover {background-color: #ddd;}
-
-#info th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: gray;
-  color: white;
-}
-</style>
-<body>
-    <div style="padding: 30px; text-align: center">
-        <h1 style="color: gray">Institute of Science & Technology</h1>
-        <span style="color: gray"><b>Since 1993</b></span>
+<body > 
+    <div style="padding: 30px;text-align: center;">
+        <h1 style="color: red">Historical place of <span style="color: green">Bangladesh</span></h1>
     </div>
-    <div style="display: flex; justify-content: center ">
+    <div style="text-align: center;">
+        <a href="index.html" style="color: gray">Homepage</a>
+    </div>
+    <br>
+    <div style="display: flex; justify-content: center">
         <div>
-            <h3 style="text-align: center">Departments of IST</h3>
-            <table id="info">
+            <table style="border: 1px solid black; padding:20px;font-size: 20px;">
                 <tr>
                     <th>Sr no.</th>
-                    <th>Department Name</th>
-                    <th>Admission</th>
+                    <th>Places</th>
                 </tr>
                 <tr>
                     <td>1.</td>
-                    <td>CSE</td>
-                    <td>Running</td>
+                    <td>Sundarban</td>
                 </tr>
                 <tr>
                     <td>2.</td>
-                    <td>BBA</td>
-                    <td>Running</td>
+                    <td>Thanchi</td>
                 </tr>
                 <tr>
                     <td>3.</td>
-                    <td>ECE</td>
-                    <td>Running</td>
+                    <td>Cox's Bazar</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>Saint Martin</td>
                 </tr>
             </table>
-            <br>
-            <div style="text-align: center">
-                <a href="index.html"><button>Homepage</button></a>
-            </div>
         </div> 
     </div>
 </body>

@@ -1,14 +1,63 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+:root {
+    --primary-clr: gray;
+    --secondary-clr: lightgray;
+}
+html {
+    font-size: 100%;
+}
 body {
     font-family: "Sofia", sans-serif;
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-size: 1.062rem;
+    line-height: 1.6;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+p#break {
+    font-weight: lighter;
+    font-size: 0.85rem;
+    line-height: 1;
+
+    margin: 0;
+}
+.container {
+    width: 75%;
+    margin: auto;
+    max-width: 700px;
+}
+.text {
+    text-align: center;
 }
 .website {
+    padding: 8px;
     border: 1px solid gray;
+    font-size: 15px;
     color: white;
+    font-weight: bold;
     background: green;
+    text-decoration: none;
 }
 .website:hover {
     color: black;
+    font-weight: bold;
     background: white;
+    border: none;
+    box-shadow: 1px 1px 10px gray;
+    transition-duration: 0.5s;
 }
 form {
     width:90%;
@@ -17,6 +66,25 @@ form {
    }
    input, textarea {
      width:100%;
+     margin-bottom:10px;
      border-radius:3px;
      border:solid 1px #ccc;
+     padding:4px 7px;
+   }
+   #eml, #tel {
+     width:49%;
+   }
+   #tel {
+     float:right;
+   }
+   button {
+     width: 120px;
+     float:right;
+     margin-left:15px;
+     border-radius:3px;
+     border:solid 1px #ccc;
+     padding:4px 7px;
+   }
+   button:hover {
+     background-color:rgb(79, 186, 238);
    }

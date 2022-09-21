@@ -1,5 +1,10 @@
-<html >
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <link rel="stylesheet" href="style.css">
@@ -18,7 +23,7 @@
             <div class="nav-header">
                 <div class="nav-title">
                     <div class="nav-title">
-                        <span>Welcome to Beautiful Bangladesh</span>
+                        <span style="color: white;">Welcome to Beautiful Bangladesh</span>
                     </div>
                 </div>
             </div>
@@ -29,21 +34,31 @@
         </div>
     </div>
     <div class="data-body">
-        <div>
+        <div style="border-radius: 50px; width: 100%; margin: 20px;background-color: white;">
             <div style=" text-align: center">
-                <a class="website " href="index.html"><span>Home Page</span></a>
+                <a class="website " href="index.html"><span>Return
+                        to Home Page</span></a>
             </div>
             <br>
             <div>
                 <div style="border: 3px solid red;color:red; padding-bottom: 20px; margin: 0px 500px;">
-                    <form> 
-                        <h2>Send a message</h2>                              
-                        <input type="email" required placeholder="email@" name="Email">
-                        <br>        
-                        <textarea required placeholder="Message" name="Message"></textarea>  
-                        <br>  
+                    <form method="post">
+  
+                        <h2>Send a message</h2>
+                        
+                        <input id="first-name" type="text" required placeholder="First name" name="First-Name">
+                        
+                        <input type="text" required placeholder="Last name" name="Last-Name">
+                        
+                        <input id="eml" type="email" required placeholder="email@" name="Email">
+                        
+                        <input id="tel" type="tel" placeholder="Phone Number" name="Phone-Number">
+                        
+                        <textarea rows="6" required placeholder="Message" name="Message"></textarea>
+                        
                         <button type="reset">Reset</button>
-                        <button type="submit">Submit</button>                      
+                        <button type="submit">Submit</button>
+                        
                       </form>
                 </div>
             </div>

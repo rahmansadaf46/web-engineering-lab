@@ -1,6 +1,10 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Bangladesh</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,19 +16,26 @@
     table {
           border-collapse: collapse;
         }
+        table, th, td {
+          padding: 10px;
+          border: 1px solid;
+        }
+         th{
+            background-color: lightgreen;
+        }
 </style>
 <body>
     <div class="data-body">
-        <div >
-            <div style=" text-align: center">
-                <div style="text-align: center;">
-                    <h1 style="color: red;" >Historical place of Bangladesh</h1>
+        <div style="border-radius: 50px; width: 800px; margin: 20px;background-color: white;">
+            <div style="padding: 30px; text-align: center">
+                <div style="padding: 30px;text-align: center;">
+                    <h1 style="color: red;" >Historical place of <span style="color: green">Bangladesh</span></h1>
                 </div>
-                <a class="website " target="_blank" href="https://www.bd.com"><span>More Details</span></a>
+                <a class="website " target="_blank" href="https://www.travelmate.com.bd/top-10-historical-places-in-bangladesh/"><span>More Details</span></a>
             </div>
             <div style="display: flex; justify-content: center">
                 <div>
-                    <table style="border: 1px solid black;  ">
+                    <table style="border: 1px solid black; padding:20px;font-size: 20px;">
                         <tr>
                             <th>Sr no.</th>
                             <th>Places</th>
@@ -37,21 +48,39 @@
                             <td>2.</td>
                             <td>Thanchi</td>
                         </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>Cox's Bazar</td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td>Saint Martin</td>
+                        </tr>
                     </table>
                 </div> 
-            </div>       
+            </div>
+            <br>
+            <br>
             <div>
-                <div style="border: 3px solid gray;">
-                    <form>
-                        <h2>Send a message</h2>                     
-                        <input id="first-name" type="text" required placeholder="First name" name="First-Name">                     
-                        <input type="text" required placeholder="Last name" name="Last-Name">                       
-                        <input id="eml" type="email" required placeholder="email@" name="Email">                
-                        <input id="tel" type="tel" placeholder="Phone Number" name="Phone-Number">              
-                        <textarea rows="6" required placeholder="Message" name="Message"></textarea>           
+                <div style="border: 3px solid gray; padding-bottom: 20px;">
+                    <form method="post">
+  
+                        <h2>Send a message</h2>
+                        
+                        <input id="first-name" type="text" required placeholder="First name" name="First-Name">
+                        
+                        <input type="text" required placeholder="Last name" name="Last-Name">
+                        
+                        <input id="eml" type="email" required placeholder="email@" name="Email">
+                        
+                        <input id="tel" type="tel" placeholder="Phone Number" name="Phone-Number">
+                        
+                        <textarea rows="6" required placeholder="Message" name="Message"></textarea>
+                        
                         <button type="reset">Reset</button>
-                        <button type="submit">Submit</button>        
-                     </form>
+                        <button type="submit">Submit</button>
+                        
+                      </form>
                 </div>
             </div>
         </div>
